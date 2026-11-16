@@ -1,0 +1,20 @@
+﻿{
+  "assets": [
+    {
+      "file": "youtube-logo.webp",
+      "source_page": "https://brand.youtube/youtube-logo/",
+      "source_asset": "https://www.gstatic.com/marketing-cms/assets/images/08/25/fffdc76145f28be3a1ca63859c4a/external-logo-core-1.png=n-w1860-h1047-fcrop64=1,00000000ffffffff-rw",
+      "author": "YouTube / Google",
+      "license": "Official brand asset; use governed by YouTube brand guidelines.",
+      "display": "Provider selector and YouTube player empty state; full image frame retained."
+    },
+    {
+      "file": "audius-logo.webp",
+      "source_page": "https://brand.audius.co/logo",
+      "source_asset": "https://brand.audius.co/images/LogoHorizontal-Color_10242x.webp",
+      "author": "Audius",
+      "license": "Official brand asset; use governed by Audius brand guidelines.",
+      "display": "Provider selector on a light logo surface; full image frame retained."
+    }
+  ]
+}

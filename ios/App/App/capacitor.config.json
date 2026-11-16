@@ -1,0 +1,12 @@
+{
+	"appId": "com.vibesync.app",
+	"appName": "VibeSync",
+	"webDir": "dist/audius",
+	"backgroundColor": "#101512",
+	"android": {
+		"allowMixedContent": false,
+		"captureInput": true,
+		"webContentsDebuggingEnabled": false
+	},
+	"packageClassList": []
+}

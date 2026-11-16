@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Información legal, términos de uso y política de privacidad de VibeSync." />
+    <title>Información legal y privacidad — VibeSync</title>
+    <style>
+      :root { color-scheme: dark; font: 16px/1.65 system-ui, sans-serif; background: #17131a; color: #f5edf4 }
+      body { margin: 0; }
+      main { max-width: 760px; margin: auto; padding: 32px 20px 72px }
+      h1,h2 { line-height: 1.2 }
+      h1 { font-size: clamp(2rem, 8vw, 3rem) }
+      a { color: #e7a8ce }
+      nav { display:flex; flex-wrap:wrap; gap:16px; margin:24px 0 }
+      section { border-top:1px solid #ffffff25; padding:24px 0; scroll-margin-top:20px }
+      .muted { color: #cfc3cd }
+      code { overflow-wrap:anywhere }
+      li { margin: 8px 0 }
+      :focus-visible { outline: 2px solid #e7a8ce; outline-offset: 3px }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a href="/">← Volver a VibeSync</a>
+      <h1>Información legal y privacidad</h1>
+      <p class="muted"><strong>Versión:</strong> 1.0 · Vigente desde el 16/11/2026.</p>
+      <nav aria-label="Secciones">
+        <a href="#privacy">Privacidad</a>
+        <a href="#storage">Cookies y almacenamiento</a>
+        <a href="#spotify">Spotify</a>
+        <a href="#terms">Términos</a>
+        <a href="#ai">Transparencia de IA</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+
+      <section id="privacy">
+        <h2>Privacidad</h2>
+        <p><strong>Responsable del servicio:</strong> Vicente Colasanti, persona física, Argentina. Contacto de privacidad y soporte: <a href="mailto:vicentguysmail@gmail.com">vicentguysmail@gmail.com</a>. Contacto público alternativo: <a href="https://www.instagram.com/viceeee_colsanti/" rel="noopener noreferrer">@viceeee_colsanti</a>. El domicilio legal se encuentra a disposición de autoridades competentes que lo requieran; no se publica un domicilio particular.</p>
+        <p>VibeSync está destinado a personas de 18 años o más. La aplicación declara ese requisito y no verifica la edad. Quien no alcance esa edad no debe usar el servicio. El titular asumió la decisión de no incorporar verificación de edad y revisó este alcance antes de publicar.</p>
+        <p>La aplicación guarda datos en el almacenamiento local del navegador bajo el espacio <code>vibesync:v1:state</code>. Puede incluir perfil local (por ejemplo, apodo y foto), gustos declarados, biblioteca y metadatos musicales, artistas, álbumes, playlists, favoritos, historial, memorias, mensajes recientes de Cirrus, preferencias, cola y caché. Otras funciones mantienen estados locales separados, incluidos los tokens y el estado de autorización de Spotify. Los datos permanecen en ese navegador hasta que se borren desde la aplicación o desde el navegador. No existe un plazo de conservación automático: el usuario controla el borrado.</p>
+        <p>La versión pública no ofrece creación de cuentas ni sincronización de la biblioteca musical en servidores propios. No se envían perfiles, playlists, historial ni gustos a un backend de VibeSync. Si existieran sesiones heredadas de Supabase en el navegador, se conservan localmente y la sincronización permanece apagada; el usuario puede cerrar esa sesión desde el perfil.</p>
+        <p><strong>Finalidad y base:</strong> los datos locales se usan para prestar las funciones solicitadas por el usuario (reproducir, buscar, guardar y personalizar recomendaciones). La base es la ejecución del servicio y el consentimiento del usuario para las integraciones opcionales. No se venden datos personales ni se usan para publicidad de terceros.</p>
+        <p><strong>Terceros y solicitudes de red:</strong> las búsquedas y streams de Audius se envían a los servidores de Audius. Google Fonts se carga desde <code>fonts.googleapis.com</code> y <code>fonts.gstatic.com</code>. Las búsquedas de YouTube se realizan desde una función de Cloudflare Pages hacia YouTube Data API v3 usando una clave guardada como secreto del servidor; los resultados incluyen datos de videos y la reproducción ocurre en el reproductor oficial embebido de YouTube, que se comunica directamente con Google. VibeSync no extrae audio de YouTube. Jamendo se consulta mediante una función con el identificador de aplicación del responsable como secreto; los resultados contienen metadatos, URL de stream y licencias devueltas por Jamendo, y el navegador solicita el stream directamente. El hosting y CDN (Cloudflare Pages) pueden procesar registros técnicos, dirección IP y cabeceras de conexión conforme a sus propias políticas. El usuario puede consultar las políticas de cada proveedor antes de usar esas funciones.</p>
+        <p><strong>Ollama local:</strong> si el usuario habilita funciones de IA que usan Ollama, las solicitudes se envían a <code>http://127.0.0.1:11434</code> en el <strong>mismo equipo</strong> donde corre VibeSync. Esas solicitudes no se envían a un servidor de VibeSync ni a un tercero. Si Ollama no está ejecutándose en el mismo equipo, la función no responde y no se envía nada. El usuario controla la instalación, los modelos y los registros de Ollama.</p>
+        <p><strong>Derechos:</strong> el usuario puede acceder, rectificar, actualizar y suprimir sus datos usando las funciones de la app (exportar respaldo y borrar datos) y solicitar información escribiendo a <a href="mailto:vicentguysmail@gmail.com">vicentguysmail@gmail.com</a>. También puede presentar reclamos ante la Agencia de Acceso a la Información Pública (AAIP) de Argentina: <a href="https://www.argentina.gob.ar/aaip/datospersonales/derechos" rel="noopener noreferrer">argentina.gob.ar/aaip/datospersonales/derechos</a>.</p>
+        <p><strong>Seguridad:</strong> se aplican medidas razonables de minimización y almacenamiento local, sin afirmar seguridad absoluta. El usuario es responsable de la seguridad de su dispositivo y de su cuenta de Spotify.</p>
+      </section>
+
+      <section id="storage">
+        <h2>Cookies y almacenamiento</h2>
+        <p>El almacenamiento local conserva el estado de VibeSync, incluida biblioteca, perfil, historial y preferencias. La aplicación también puede mantener cola, caché y estados de sesión, incluidas sesiones heredadas. La limpieza de datos propia elimina las claves locales con prefijos de VibeSync en el navegador actual; no elimina exportaciones o copias, datos que ya recibió un proveedor, perfiles remotos previos de Supabase ni permisos externos.</p>
+        <p>La revisión del código no identificó cookies propias de VibeSync. El hosting, CDN, recursos externos, navegadores e integraciones pueden generar cookies, almacenamiento o registros técnicos. No se afirma que el sitio completo esté libre de cookies o de solicitudes a terceros.</p>
+        <p>Google Fonts puede cargar desde dominios de Google. El tratamiento que realice Google y los registros técnicos del proveedor se rigen por su documentación vigente.</p>
+      </section>
+
+      <section id="spotify">
+        <h2>Integración con Spotify</h2>
+        <p>Spotify es una integración opcional. La conexión requiere consentimiento explícito y usa OAuth con PKCE; solicita permisos de lectura de perfil privado, biblioteca y playlists privadas o colaborativas. El usuario puede decidir no conectarla y seguir usando Audius, YouTube y las funciones locales.</p>
+        <p>Los tokens de acceso y renovación, el Client ID público y el estado temporal de autorización se guardan en el navegador; el reconocimiento de mayoría de edad se conserva en sessionStorage y no verifica la edad. Tras el consentimiento, el navegador se comunica con <code>accounts.spotify.com</code> y <code>api.spotify.com</code>. Desconectar elimina los tokens locales y las referencias importadas de VibeSync, pero no revoca el permiso en Spotify ni borra los datos que Spotify conserve; para revocar el acceso hay que hacerlo desde la cuenta de Spotify.</p>
+        <p>La fuente Spotify se mantiene separada del catálogo Audius y no se usa en Music DNA ni en las recomendaciones de Cirrus. La reproducción depende de las interfaces públicas y del reproductor oficial de Spotify. Condiciones vigentes: <a href="https://developer.spotify.com/policy" rel="noopener noreferrer">Política para desarrolladores de Spotify</a>. La Redirect URI se calcula con el origen real de la app y debe registrarse exactamente en el Dashboard de Spotify.</p>
+      </section>
+
+      <section id="ai">
+        <h2>Transparencia de IA</h2>
+        <p>Cirrus puede responder con reglas locales de VibeSync. Los proveedores Gemini y Groq están desactivados para usuarios. Las preferencias heredadas de un proveedor se normalizan al modo local cuando se cargan o restauran datos. Si el usuario habilita Ollama, las solicitudes van a <code>127.0.0.1:11434</code> en el mismo equipo y no a VibeSync.</p>
+        <p>Esta versión no usa SpeechRecognition, speechSynthesis ni ElevenLabs. No solicita acceso al micrófono ni envía voz o transcripciones a esos servicios.</p>
+        <p>Los datos importados de Spotify se excluyen del contexto de Cirrus y de Music DNA. Las respuestas de IA pueden contener errores y no constituyen asesoramiento profesional.</p>
+      </section>
+
+      <section id="terms">
+        <h2>Términos de uso</h2>
+        <p><strong>Titular:</strong> Vicente Colasanti, Argentina. <strong>Contacto:</strong> <a href="mailto:vicentguysmail@gmail.com">vicentguysmail@gmail.com</a> · <a href="https://www.instagram.com/viceeee_colsanti/" rel="noopener noreferrer">@viceeee_colsanti</a>. <strong>Vigencia:</strong> 16/11/2026.</p>
+        <p>VibeSync es un servicio gratuito de búsqueda, organización y reproducción de música mediante catálogos y reproductores de terceros. El acceso implica aceptar estos términos. El servicio se ofrece "tal como está" y "según disponibilidad", sin garantía de disponibilidad continua, exactitud de metadatos ni funcionamiento ininterrumpido.</p>
+        <p><strong>Cuenta y uso:</strong> el perfil es local al dispositivo. El usuario debe ser mayor de 18 años, mantener segura su cuenta de Spotify y no usar la app para infringir derechos, distribuir contenido ilegal, eludir medidas tecnológicas, extraer audio de plataformas de terceros ni realizar ataques o uso automatizado abusivo.</p>
+        <p><strong>Contenido y propiedad intelectual:</strong> las canciones, portadas, marcas y metadatos pertenecen a sus titulares y proveedores. VibeSync no reclama propiedad sobre ese contenido ni otorga licencias sobre la música. El nombre, el diseño, el código propio y los textos de VibeSync pertenecen a su titular. Se permite un uso personal y no exclusivo de la app; no se permite revenderla ni redistribuir el código propio sin autorización.</p>
+        <p><strong>Integraciones:</strong> Audius, YouTube, Spotify, Jamendo, Google Fonts y Cloudflare tienen sus propios términos y disponibilidad. La app no controla esos servicios y no garantiza que un tema siga disponible. Las funciones que dependen de claves o permisos pueden dejar de funcionar si el proveedor las revoca.</p>
+        <p><strong>Precios y reembolsos:</strong> la versión actual es gratuita y no cobra suscripciones ni compras dentro de la app. No existen reembolsos porque no hay pagos. Si en el futuro se incorporaran precios, se informarían antes de contratar.</p>
+        <p><strong>Soporte y reclamos:</strong> los reclamos se reciben en <a href="mailto:vicentguysmail@gmail.com">vicentguysmail@gmail.com</a> y se responderán en un plazo razonable. El usuario puede solicitar la eliminación de sus datos locales desde la app o por ese correo.</p>
+        <p><strong>Responsabilidad:</strong> en la medida permitida por la ley, el titular no responde por daños indirectos, pérdida de datos por borrado del navegador, fallas de terceros, interrupciones de red ni uso indebido de la app. Nada en estos términos limita derechos irrenunciables de consumidores.</p>
+        <p><strong>Modificaciones:</strong> estos términos pueden actualizarse. La versión vigente se publica en esta página con su fecha. El uso continuado después de un cambio implica aceptación.</p>
+        <p><strong>Ley aplicable y jurisdicción:</strong> se aplica la ley de la República Argentina. Las controversias se someten a los tribunales ordinarios competentes de Argentina, sin perjuicio de la jurisdicción que corresponda al consumidor.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contacto</h2>
+        <p>Privacidad, soporte y reclamos: <a href="mailto:vicentguysmail@gmail.com">vicentguysmail@gmail.com</a>. Instagram: <a href="https://www.instagram.com/viceeee_colsanti/" rel="noopener noreferrer">@viceeee_colsanti</a>. Responsable: Vicente Colasanti, Argentina.</p>
+        <p class="muted">Este documento describe el funcionamiento de la versión publicada y no constituye asesoramiento jurídico para terceros.</p>
+      </section>
+    </main>
+  </body>
+</html>
