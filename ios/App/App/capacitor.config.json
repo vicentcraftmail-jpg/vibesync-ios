@@ -3,6 +3,10 @@
 	"appName": "VibeSync",
 	"webDir": "dist/audius",
 	"backgroundColor": "#101512",
+	"server": {
+		"url": "https://vibesync-am0.pages.dev",
+		"androidScheme": "https"
+	},
 	"android": {
 		"allowMixedContent": false,
 		"captureInput": true,
