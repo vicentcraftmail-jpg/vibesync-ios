@@ -64,7 +64,7 @@
 
       <section id="ai">
         <h2>Transparencia de IA</h2>
-        <p>Cirrus puede responder con reglas locales de VibeSync. Los proveedores Gemini y Groq están desactivados para usuarios. Las preferencias heredadas de un proveedor se normalizan al modo local cuando se cargan o restauran datos. Si el usuario habilita Ollama, las solicitudes van a <code>127.0.0.1:11434</code> en el mismo equipo y no a VibeSync.</p>
+        <p>Cirrus conversa mediante una API de IA (Groq) a través de un proxy del servidor. La clave del proveedor vive solo en el servidor y nunca se envía al navegador. Para responder, se envían al proveedor el mensaje del usuario, el historial reciente de la conversación y un resumen del contexto musical no-Spotify (títulos, artistas, géneros y DNA). No se envían metadatos de Spotify. Si la API no responde, la app usa un motor local de respaldo. Si el usuario habilita Ollama, las solicitudes van a <code>127.0.0.1:11434</code> en el mismo equipo y no a VibeSync ni a Groq.</p>
         <p>Esta versión no usa SpeechRecognition, speechSynthesis ni ElevenLabs. No solicita acceso al micrófono ni envía voz o transcripciones a esos servicios.</p>
         <p>Los datos importados de Spotify se excluyen del contexto de Cirrus y de Music DNA. Las respuestas de IA pueden contener errores y no constituyen asesoramiento profesional.</p>
       </section>
